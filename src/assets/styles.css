@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: white;
+    position: relative;
+    z-index: 20;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.78);
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+ 
+}
+
+nav a { 
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-family: "brother-1816", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    margin-top: 65px;
+}
+
+nav a::after {
+    content: '';
+    width: 0;
+    height: .5px;
+    display: block;
+    background: black;
+    transition: .5s;
+  }
+  
+nav a:hover::after {
+    width: 100%;
+  }
+
+a:link{
+    text-decoration: none;
+  }
+
+.HEADER a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    /* background-color: white; */
+    color: #000;
+    font-family: "brother-1816", sans-serif;
+    font-weight: 10;
+    text-align: center;
+    font-size: 5vw;
+    letter-spacing: 0.5em;
+    margin: 0px;
+    /* padding: 10px 38.65%; */
+    padding: 10px;
+    /* position: fixed; */
+    white-space: nowrap;
+    transition: all 1s ease;
+    width: 100%;
+}
+
+
+
+h3 {
+    color: #000;
+    text-align: left;
+    text-decoration: none;
+    font-family: "brother-1816", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    width: auto;
+    padding-left: 15px;
+    padding-top: 0px;
+}
+
+h4 {
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-family: "brother-1816", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.scroll-container{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.scroll-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* city page */
+
+.city-names {
+    z-index: 1;
+    color: #ffffff;
+    text-align: left;
+    font-family: "brother-1816", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3px;
+    width: auto;
+    position: relative;
+}
+
+.city-names ul {
+    list-style: none;
+    position: absolute;
+    z-index: 10;
+    padding-top: 2.5%;
+    padding-left: 5%;
+}
+
+.city-names li {
+    margin: 0;
+    padding: 0;
+    padding-left: 20%;
+    padding-top: 25px;
+    width: 100%;
+}
+
+.city-names li a{
+    color: white;
+    text-decoration: none;
+}
+
+.city-names li:nth-child(2) a:hover::after { /* paris underline */
+    width: 70px;
+}
+
+.city-names li:nth-child(3) a:hover::after { /* milan underline */
+    width: 80px;
+}
+
+.city-names a::after {
+    content: '';
+    width: 0;
+    height: .5px;
+    display: block;
+    background: rgb(255, 255, 255);
+    transition: .5s;
+  }
+  
+.city-names a:hover::after {
+    transition: .5s;
+    width: 100%;
+  }
+
+.blurred-bg {
+    background: url("MIUMIU_FW22_BOH_ACIELLESTYLEDUMONDE_28.webp");
+    background-attachment: fixed;
+    width: 100%;
+    min-height: calc(100vh - 102px);
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+/* city subpages */
+.city-title {
+    color: #000;
+    text-align: center;
+    font-family: "brother-1816", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 5px;
+    width: auto;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.city-bio {
+    color: #000;
+    text-align: justify;
+    text-decoration: none;
+    font-family: "brother-1816", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    line-height: 35px;
+    width: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 50px
+}
+
+.city-container {
+    display: flex;
+    justify-content: center; /* horizontally center the grid */
+    align-items: center; /* vertically center the grid */
+    height: auto; 
+    padding: 0 50px;
+    margin-top: 50px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 15px;
+}
+
+.grid-item {
+    overflow: hidden; 
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto; 
+}
+
+.photo-credit h3 {
+    color: #000;
+    text-decoration: none;
+    font-family: "brother-1816", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    width: auto;
+    padding-left: 230px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 640px) {
+
+    h1{
+        font-size: 33px;
+    }
+    h1:hover{
+    letter-spacing: 40px;
+    }
+}

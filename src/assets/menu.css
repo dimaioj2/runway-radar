@@ -1,6 +1,6 @@
 :root {
-    --header-height: 130px;
-    --menu-bg: #9ae9cf;
+    --header-height: 50px;
+    --menu-bg: white;
 }
 
 body {
@@ -32,13 +32,14 @@ nav {
     top: var(--header-height);
     left: 0;
     width: 100%;
-    height: calc(100vh - 130px);
-    background: var(--menu-bg);
+    height: calc(100vh - var(--header-height));
+    background: var(--menu-bg);   
+   
 }
 
 nav a {
     text-decoration: none;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
 }
 
@@ -55,22 +56,34 @@ nav a {
 
 
 @media (min-width: 640px) {
+    :root {
+        --header-height: 108px;
+
+    }
+    
+    header{
+        flex-direction: column;
+    }
     nav {
+        position: static;
         flex-direction: row;
         height: var(--header-height);
         align-items: center;
-        padding-right:20px;
+        justify-content: space-evenly !important;
     }
 
     nav a {
         text-align: left;
+        margin-top:0;
     }
-
+div.right{
+    display: none;
+}
     .main-nav-hidden {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        position: static;
+        justify-content:center;
+    
         width: 100%;
     }
 
