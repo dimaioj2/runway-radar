@@ -252,11 +252,11 @@ h4 {
 }
 
 @media (min-width: 640px) {
-
     h1{
         font-size: 33px;
     }
+    
     h1:hover{
-    letter-spacing: 40px;
-    }
+        letter-spacing: 40px;
+     }
 }
