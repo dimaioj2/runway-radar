@@ -101,30 +101,25 @@ h4 {
 .city-names {
     z-index: 1;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     font-family: "brother-1816", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 3px;
-    width: auto;
-    position: relative;
 }
 
 .city-names ul {
     list-style: none;
-    position: absolute;
+    position: relative;
     z-index: 10;
-    padding-top: 2.5%;
-    padding-left: 5%;
+    padding-top: 50%;
+    padding-right: 10%
 }
 
 .city-names li {
-    margin: 0;
-    padding: 0;
-    padding-left: 20%;
-    padding-top: 25px;
+    padding-top: 25%;
     width: 100%;
 }
 
@@ -133,35 +128,12 @@ h4 {
     text-decoration: none;
 }
 
-.city-names li:nth-child(2) a:hover::after { /* paris underline */
-    width: 70px;
-}
-
-.city-names li:nth-child(3) a:hover::after { /* milan underline */
-    width: 80px;
-}
-
-.city-names a::after {
-    content: '';
-    width: 0;
-    height: .5px;
-    display: block;
-    background: rgb(255, 255, 255);
-    transition: .5s;
-  }
-  
-.city-names a:hover::after {
-    transition: .5s;
-    width: 100%;
-  }
-
 .blurred-bg {
-    background: url("MIUMIU_FW22_BOH_ACIELLESTYLEDUMONDE_28.webp");
-    background-attachment: fixed;
+    background: url("/assets/MIUMIU_FW22_BOH_ACIELLESTYLEDUMONDE_28.webp");
     width: 100%;
     min-height: calc(100vh - 102px);
     background-size: cover;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     filter: blur(10px);
 }
@@ -260,4 +232,50 @@ h4 {
     nav a:hover::after {
         width: 100%;
       }
+
+      /* cities page */
+
+      .city-names {
+        z-index: 1;
+        color: #ffffff;
+        text-align: left;
+        font-family: "brother-1816", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 3px;
+        width: auto;
+        position: relative;
+    }
+    
+    .city-names ul {
+        list-style: none;
+        position: absolute;
+        z-index: 10;
+        padding-top: 2.5%;
+    }
+    
+    .city-names li {
+        margin: 0;
+        padding: 0;
+        padding-left: 20%;
+        padding-top: 25px;
+        width: 100%;
+    }
+    
+    .city-names li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .blurred-bg {
+        background: url("/assets/MIUMIU_FW22_BOH_ACIELLESTYLEDUMONDE_28.webp");
+        width: 100%;
+        min-height: calc(100vh - 102px);
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+        filter: blur(10px);
+    }
 }
