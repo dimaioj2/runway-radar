@@ -114,7 +114,7 @@ h4 {
     list-style: none;
     position: relative;
     z-index: 10;
-    padding-top: 50%;
+    padding-top: 30%
     padding-right: 10%
 }
 
@@ -143,7 +143,7 @@ h4 {
     color: #000;
     text-align: center;
     font-family: "brother-1816", sans-serif;
-    font-size: 30px;
+    font-size: 4vw;
     font-style: normal;
     line-height: normal;
     letter-spacing: 5px;
@@ -171,8 +171,6 @@ h4 {
 
 .city-container {
     display: flex;
-    justify-content: center; /* horizontally center the grid */
-    align-items: center; /* vertically center the grid */
     height: auto; 
     padding: 0 50px;
     margin-top: 50px;
@@ -301,4 +299,67 @@ h4 {
         transition: .5s;
         width: 100%;
       }
+
+      /*  city sub pages */
+
+      .city-title {
+        font-size: 30px;
+    }
+    
+    .city-bio {
+        color: #000;
+        text-align: justify;
+        text-decoration: none;
+        font-family: "brother-1816", sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1px;
+        line-height: 35px;
+        width: auto;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-top: 50px
+    }
+    
+    .city-container {
+        display: flex;
+        justify-content: center; /* horizontally center the grid */
+        align-items: center; /* vertically center the grid */
+        height: auto; 
+        padding: 0 50px;
+        margin-top: 50px;
+    }
+    
+    .photo-grid {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 15px;
+    }
+    
+    .grid-item {
+        overflow: hidden; 
+    }
+    
+    .photo-grid img {
+        width: 100%;
+        height: auto; 
+    }
+    
+    .photo-credit h3 {
+        color: #000;
+        text-decoration: none;
+        font-family: "brother-1816", sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1px;
+        width: auto;
+        padding-left: 230px;
+        margin-bottom: 50px;
+    }
+    
 }
