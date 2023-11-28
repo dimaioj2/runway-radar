@@ -148,7 +148,7 @@ h4 {
     line-height: normal;
     letter-spacing: 5px;
     width: auto;
-    margin-top: 75px;
+    margin-top: 20%;
     margin-bottom: 75px;
 }
 
@@ -179,6 +179,7 @@ h4 {
 }
 
 .photo-grid {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 15px;
@@ -278,4 +279,26 @@ h4 {
         z-index: -1;
         filter: blur(10px);
     }
+
+    .city-names li:nth-child(2) a:hover::after { /* paris underline */
+        width: 70px;
+    }
+    
+    .city-names li:nth-child(3) a:hover::after { /* milan underline */
+        width: 80px;
+    }
+    
+    .city-names a::after {
+        content: '';
+        width: 0;
+        height: .5px;
+        display: block;
+        background: rgb(255, 255, 255);
+        transition: .5s;
+      }
+      
+    .city-names a:hover::after {
+        transition: .5s;
+        width: 100%;
+      }
 }
