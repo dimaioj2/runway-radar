@@ -39,6 +39,10 @@ a:link{
     justify-content: center;
 }
 
+main {
+    min-height: 100vh;
+}
+
 h1 {
     /* background-color: white; */
     color: #000;
@@ -98,6 +102,10 @@ h4 {
 
 /* city page */
 
+.cities {
+    overflow-y: hidden;
+}
+
 .city-names {
     z-index: 1;
     color: #ffffff;
@@ -108,14 +116,19 @@ h4 {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 3px;
+    position: relative;
 }
 
 .city-names ul {
-    list-style: none;
+    list-style-type: none;
     position: relative;
     z-index: 10;
-    padding-top: 30%
-    padding-right: 10%
+    padding-left: 0;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .city-names li {
@@ -131,7 +144,7 @@ h4 {
 .blurred-bg {
     background: url("/assets/MIUMIU_FW22_BOH_ACIELLESTYLEDUMONDE_28.webp");
     width: 100%;
-    min-height: calc(100vh - 102px);
+    min-height: calc(100vh - 25px);
     background-size: cover;
     position: fixed;
     z-index: -1;
@@ -148,7 +161,7 @@ h4 {
     line-height: normal;
     letter-spacing: 5px;
     width: auto;
-    margin-top: 20%;
+    margin-top: 25%;
     margin-bottom: 75px;
 }
 
@@ -206,6 +219,16 @@ h4 {
     margin-bottom: 50px;
 }
 
+
+/*
+*****
+*****
+
+MEDIA QUERIES
+*****
+*****
+*/
+
 @media (min-width: 640px) {
     h1{
         font-size: 33px;
@@ -213,7 +236,7 @@ h4 {
     
     h1:hover{
         letter-spacing: 40px;
-     }
+    }
 
     nav a {
         font-size: 11px;
@@ -226,15 +249,20 @@ h4 {
         display: block;
         background: black;
         transition: .5s;
-      }
-      
+    }
+    
     nav a:hover::after {
         width: 100%;
-      }
+    }
 
-      /* cities page */
+    /* cities page */
 
-      .city-names {
+    .city-names ul {
+        display: block;
+        padding-left: 40px;
+    }
+
+    .city-names {
         z-index: 1;
         color: #ffffff;
         text-align: left;
@@ -293,17 +321,18 @@ h4 {
         display: block;
         background: rgb(255, 255, 255);
         transition: .5s;
-      }
-      
+    }
+    
     .city-names a:hover::after {
         transition: .5s;
         width: 100%;
-      }
+    }
 
-      /*  city sub pages */
+    /*  city sub pages */
 
-      .city-title {
+    .city-title {
         font-size: 30px;
+        margin-top: 15%;
     }
     
     .city-bio {
