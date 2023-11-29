@@ -44,7 +44,6 @@ main {
 }
 
 h1 {
-    /* background-color: white; */
     color: #000;
     font-family: "brother-1816", sans-serif;
     font-weight: 10;
@@ -52,12 +51,11 @@ h1 {
     font-size: 5vw;
     letter-spacing: 0.5em;
     margin: 0px;
-    /* padding: 10px 38.65%; */
     padding: 10px;
-    /* position: fixed; */
     white-space: nowrap;
     transition: all 1s ease;
     width: 100%;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -161,8 +159,9 @@ h4 {
     line-height: normal;
     letter-spacing: 5px;
     width: auto;
-    margin-top: 25%;
+    margin-top: 200px;
     margin-bottom: 75px;
+    text-transform: uppercase;
 }
 
 .city-bio {
@@ -209,15 +208,33 @@ h4 {
     color: #000;
     text-decoration: none;
     font-family: "brother-1816", sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 1px;
     width: auto;
-    padding-left: 230px;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 35px;
+
 }
+
+/* upcoming shows page */
+
+.show-header {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "brother-1816", sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    width: auto;
+    margin-top: 150px;
+    text-transform: uppercase;
+    background-color: black;
+    padding: .5;
+}
+
 
 
 /*
@@ -332,7 +349,6 @@ MEDIA QUERIES
 
     .city-title {
         font-size: 30px;
-        margin-top: 15%;
     }
     
     .city-bio {
@@ -387,8 +403,9 @@ MEDIA QUERIES
         line-height: normal;
         letter-spacing: 1px;
         width: auto;
-        padding-left: 230px;
-        margin-bottom: 50px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 35px;
     }
     
 }
