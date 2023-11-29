@@ -146,7 +146,8 @@ h4 {
     background-size: cover;
     position: fixed;
     z-index: -1;
-    filter: blur(10px);
+    filter: blur(5px);
+    
 }
 
 /* city subpages */
@@ -320,7 +321,7 @@ MEDIA QUERIES
         background-size: cover;
         position: absolute;
         z-index: -1;
-        filter: blur(10px);
+        filter: blur(5px);
     }
 
     .city-names li:nth-child(2) a:hover::after { /* paris underline */
