@@ -141,6 +141,7 @@ h4 {
 
 .blurred-bg {
     background: url("/assets/MIUMIU_FW22_BOH_ACIELLESTYLEDUMONDE_28.webp");
+    background-position: center center;
     width: 100%;
     min-height: calc(100vh - 25px);
     background-size: cover;
@@ -190,18 +191,18 @@ h4 {
 }
 
 .photo-grid {
-    margin-top: 50px;
+    margin-top: 25px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 15px;
 }
 
 .grid-item {
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .photo-grid img {
-    width: 100%;
+    width: 75%;
     height: auto; 
 }
 
@@ -223,11 +224,11 @@ h4 {
 
 /* upcoming shows page */
 
-.show-header {
+.page-header {
     color: #ffffff;
     text-decoration: none;
     font-family: "brother-1816", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 2px;
     width: auto;
     margin-top: 150px;
@@ -236,8 +237,31 @@ h4 {
     padding: .5;
 }
 
+.designer-names{
+    color: #000000;
+    list-style-type: none;
+    font-family: "brother-1816", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    width: auto;
+    text-transform: uppercase;
+    padding: 10px;
+    line-height: 40px;
+    text-align: left;
+    }
 
-
+    .show-access{
+        color: #000000;
+        list-style-type: none;
+        font-family: "brother-1816", sans-serif;
+        font-size: 16px;
+        letter-spacing: 2px;
+        width: auto;
+        text-transform: uppercase;
+        padding: 10px;
+        line-height: 40px;
+        text-align: right;
+        }
 /*
 *****
 *****
