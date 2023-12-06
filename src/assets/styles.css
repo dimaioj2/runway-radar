@@ -58,7 +58,7 @@ h1{
     text-transform: uppercase;
 } 
 
-h3 {
+.photo-credit {
     color: #000;
     text-align: left;
     text-decoration: none;
@@ -152,7 +152,7 @@ h4 {
 }
 
 /* city subpages */
-.city-title {
+.city-name {
     color: #000;
     text-align: center;
     font-family: "brother-1816", sans-serif;
@@ -223,14 +223,13 @@ h4 {
 }
 
 /* upcoming shows page */
-.page-header {
+.upcomingshows .page-header {
     color: #ffffff;
     text-decoration: none;
     font-family: "brother-1816", sans-serif;
     font-size: 20px;
     letter-spacing: 2px;
     width: auto;
-    margin-top: 150px;
     text-transform: uppercase;
     background-color: black;
     padding: .5;
@@ -245,12 +244,20 @@ h4 {
 .upcomingshows main{
     display: flex;
     flex-direction: column;
-     align-items: center;
+    align-items: center;
 }
 
-
 .city-title {
-    margin-top: 100px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "brother-1816", sans-serif;
+    font-size: 4vw;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 5px;
+    width: auto;
+    margin-top: 150px;
     margin-bottom: 0;
 }
 .show-week {
@@ -268,12 +275,10 @@ h4 {
     justify-content: center;
 }
 
-h4.show-date {
+.show-date {
     display: flex;
     justify-content: flex-start;
     padding-left: 60px;
-    margin-bottom: 0;
-    margin-top: 100px;
 }
 
 table, .upcomingshows h4{
@@ -292,11 +297,9 @@ td {
     color: #000000;
     font-family: "brother-1816", sans-serif;
     font-size: 18px;
+    letter-spacing: 2px;
     vertical-align: top;
-
-
 }
-
 
 td:nth-child(2) {
     text-align: right;
@@ -304,16 +307,25 @@ td:nth-child(2) {
     flex-direction: column;
 }
 
-p {
-    font-size: 25px;
-}
-
 .show-time {
     font-size: 15px;
  
 }
 
-    /* radar reports page */
+
+
+/* radar reports page */
+.page-header {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "brother-1816", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: auto;
+    text-transform: uppercase;
+    background-color: black;
+    padding: .5;
+}
 
 .article-links {
     list-style: none;
@@ -338,7 +350,7 @@ p {
 
 .blurred-bgg {
     background: url("/assets/marcjacobs_fw20_corey_30.webp");
-    background-position: center center;
+    background-position: center;
     width: 100%;
     min-height: calc(100vh - 25px);
     background-size: cover;
@@ -457,7 +469,7 @@ MEDIA QUERIES
 
     /*  city sub pages */
 
-    .city-title {
+    .city-name {
         font-size: 30px;
     }
     
@@ -540,19 +552,10 @@ MEDIA QUERIES
     }
 
     td {
-        
         color: #000000;
         font-family: "brother-1816", sans-serif;
         font-size: 35px;
     }
-
-    p {
-        font-size: 35px
-    }
-    p.show-time {
-        font-size: 20px;
-    }
-
 
 
     /* radar reports */
@@ -565,9 +568,8 @@ MEDIA QUERIES
     .blurred-bgg {
         background: url("/assets/marcjacobs_fw20_corey_30.webp");
         width: 100%;
-        min-height: calc(100vh - 102px);
         background-size: cover;
-        position: absolute;
+        position: fixed;
         z-index: -1;
         filter: blur(5px);
     }
