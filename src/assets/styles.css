@@ -43,7 +43,7 @@ main {
     min-height: 100vh;
 }
 
-h1 {
+h1{
     color: #000;
     font-family: "brother-1816", sans-serif;
     font-weight: 10;
@@ -56,7 +56,7 @@ h1 {
     transition: all 1s ease;
     width: 100%;
     text-transform: uppercase;
-}
+} 
 
 h3 {
     color: #000;
@@ -223,8 +223,7 @@ h4 {
 }
 
 /* upcoming shows page */
-
-.page-header h1{
+.page-header {
     color: #ffffff;
     text-decoration: none;
     font-family: "brother-1816", sans-serif;
@@ -237,32 +236,82 @@ h4 {
     padding: .5;
 }
 
-.designer-names{
+.upcomingshows .page-header{
+    width: 100%;
+    position: fixed;
+    margin-top: 0;
+}
+
+.upcomingshows main{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+}
+
+
+.city-title {
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+.show-week {
     color: #000000;
-    list-style-type: none;
     font-family: "brother-1816", sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
     width: auto;
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h4.show-date {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 60px;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+table, .upcomingshows h4{
+    width: 96%;
+    max-width: 800px;
+    margin: 0 15px;
+}
+
+tr {
+    width: 100%;
+}
+
+
+td {
     text-transform: uppercase;
-    padding: 10px;
-    line-height: 40px;
-    text-align: left;
-    }
+    color: #000000;
+    font-family: "brother-1816", sans-serif;
+    font-size: 18px;
+    vertical-align: top;
 
-    .show-access{
-        color: #000000;
-        list-style-type: none;
-        font-family: "brother-1816", sans-serif;
-        font-size: 16px;
-        letter-spacing: 2px;
-        width: auto;
-        text-transform: uppercase;
-        padding: 10px;
-        line-height: 40px;
-        text-align: right;
-        }
 
+}
+
+
+td:nth-child(2) {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 25px;
+}
+
+.show-time {
+    font-size: 15px;
+ 
+}
 
     /* radar reports page */
 
@@ -272,6 +321,7 @@ h4 {
 }
 
 .article-links li {
+    text-decoration: none;
     font-family: "brother-1816", sans-serif;
     color: white;
     font-size: 17px;
@@ -336,7 +386,7 @@ MEDIA QUERIES
 
     .city-names ul {
         display: block;
-        padding-left: 40px;
+        padding-left: 100px;
     }
 
     .city-names {
@@ -470,6 +520,41 @@ MEDIA QUERIES
     
     /* upcoming shows */
 
+    .city-title {
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+    .show-week {
+        color: #000;
+        font-family: "brother-1816", sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1px;
+        width: auto;
+        margin-top: 0;
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    td {
+        
+        color: #000000;
+        font-family: "brother-1816", sans-serif;
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 35px
+    }
+    p.show-time {
+        font-size: 20px;
+    }
+
+
+
     /* radar reports */
     .article-links li{
         margin: 100px 150px;
@@ -477,7 +562,7 @@ MEDIA QUERIES
         font-size: 20px;
     }
 
-    .blurred-bg {
+    .blurred-bgg {
         background: url("/assets/marcjacobs_fw20_corey_30.webp");
         width: 100%;
         min-height: calc(100vh - 102px);
