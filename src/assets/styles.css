@@ -161,7 +161,7 @@ h4 {
     line-height: normal;
     letter-spacing: 5px;
     width: auto;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 75px;
     text-transform: uppercase;
 }
@@ -256,7 +256,7 @@ h4 {
     line-height: normal;
     letter-spacing: 5px;
     width: auto;
-    margin-top: 150px;
+    margin-top: 125px;
     margin-bottom: 0;
 }
 .show-week {
@@ -272,6 +272,7 @@ h4 {
     padding-top: 0;
     display: flex;
     justify-content: center;
+    margin-bottom: 70px;
 }
 
 .show-date {
@@ -328,7 +329,7 @@ td:nth-child(2) {
 
 .article-links {
     list-style: none;
-    padding-top: 100px;
+    padding-top: 65px;
     padding-left: 0;
 }
 
