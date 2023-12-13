@@ -2,15 +2,19 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 
 module.exports = function(eleventyConfig) {
+  let p = {}
+  if (process.env.NODE_ENV === 'production') {
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+    p={ pathPrefix: "/runway-radar/"}
+  }
   
-  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
     eleventyConfig.addPassthroughCopy("src/assets");
     eleventyConfig.addWatchTarget("./src/");
   
     
     // Return your Object options:
     return {
-      pathPrefix: "/runway-radar/",
+     ...p,
       dir: {
         input: "src",
         output: "docs",
