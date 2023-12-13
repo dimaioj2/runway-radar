@@ -38,7 +38,7 @@ To place the component in an HTML file, we use a special Liquid tag:
 
 Sometimes, you might want to place a component multiple times with the same HTML elements, but different content. For example you might have a repeated 'tile' element with a specific layout and styling. You can add custom properties to your `include` tags as follows:
 
-`{% include 'myComponent', title:'My Title', description:'some description text' %}`
+{% include file.ext param='value' param2='value' %}
 
 This set up 2 properties: one for a title and one for a description. To use these properties in our component (the `.liquid` file in `_includes`), you can put the property name surrounded by two squiggly brackets: `{{propertyname}}`
 
