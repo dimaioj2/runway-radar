@@ -1,4 +1,4 @@
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+// const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 
 module.exports = function(eleventyConfig) {
@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
     
     // Return your Object options:
     return {
-     
+      pathPrefix: "/runway-radar/",
       dir: {
         input: "src",
         output: "docs",
