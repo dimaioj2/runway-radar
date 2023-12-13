@@ -220,8 +220,7 @@ h4 {
     letter-spacing: 1px;
     width: auto;
     display: flex;
-    justify-content: flex-start;
-    margin-left: 35px;
+    justify-content: center;
 
 }
 
@@ -523,14 +522,8 @@ MEDIA QUERIES
         text-decoration: none;
         font-family: "brother-1816", sans-serif;
         font-size: 10px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
         letter-spacing: 1px;
         width: auto;
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 35px;
     }
     
     /* upcoming shows */
