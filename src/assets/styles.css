@@ -349,7 +349,7 @@ td:nth-child(2) {
 }
 
 .blurred-bgg {
-    background: url("/assets/marcjacobs_fw20_corey_30.webp");
+    background: url("../assets/marcjacobs_fw20_corey_30.webp");
     background-position: center;
     width: 100%;
     min-height: calc(100vh - 25px);
@@ -436,7 +436,7 @@ MEDIA QUERIES
     }
 
     .blurred-bg {
-        background: url("/assets/MIUMIU_FW22_BOH_ACIELLESTYLEDUMONDE_28.webp");
+        background: url("../assets/MIUMIU_FW22_BOH_ACIELLESTYLEDUMONDE_28.webp");
         width: 100%;
         min-height: calc(100vh - 102px);
         background-size: cover;
@@ -566,7 +566,7 @@ MEDIA QUERIES
     }
 
     .blurred-bgg {
-        background: url("/assets/marcjacobs_fw20_corey_30.webp");
+        background: url("../assets/marcjacobs_fw20_corey_30.webp");
         width: 100%;
         background-size: cover;
         position: fixed;
