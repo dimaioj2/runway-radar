@@ -3,7 +3,7 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
   let p = {}
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'build') {
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
     p={ pathPrefix: "/runway-radar/"}
   }
