@@ -91,6 +91,7 @@ h4 {
 .scroll-container{
     overflow: auto;
     white-space: nowrap;
+    margin-top: 75px;
 }
 
 .scroll-container img {
