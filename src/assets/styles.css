@@ -140,7 +140,7 @@ h4 {
 }
 
 .blurred-bg {
-    background: url("/assets/MIUMIU_FW22_BOH_ACIELLESTYLEDUMONDE_28.webp");
+    background: url("../assets/MIUMIU_FW22_BOH_ACIELLESTYLEDUMONDE_28.webp");
     background-position: center center;
     width: 100%;
     min-height: calc(100vh - 25px);
