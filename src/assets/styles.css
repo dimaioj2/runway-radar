@@ -329,12 +329,12 @@ td:nth-child(2) {
 .article-links {
     list-style: none;
     padding-top: 100px;
+    padding-left: 0;
 }
 
 .article-links li {
     text-decoration: none;
     font-family: "brother-1816", sans-serif;
-   
     font-size: 17px;
     list-style-type: none;
     text-align: center;
@@ -346,6 +346,7 @@ td:nth-child(2) {
 .article-links li a{
     color: white;
     border-bottom: .5px solid white;
+    padding-left: 0;
 }
 
 .blurred-bgg {
