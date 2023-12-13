@@ -1,5 +1,5 @@
 # site-generator
-site generator 11ty base for multi page websites. asdasdad
+site generator 11ty base for multi page websites.
 
 ## About
 This repository gives you some build tooling to make it easier to build a multi-page website.
